@@ -1,0 +1,217 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!---------bootstrap css------------>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <!----------bootstrap js--------->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!----------font awesome ---------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <!------google font popins------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+   <!--------external css-->
+    <link rel="stylesheet" href="contact.css">
+    <link rel="icon" href="/images/age calculator logo design.png">
+</head>
+<body>
+     <!--------------header start-------------->
+     <header>
+        <nav>
+            <div class="logo"><img src="images/age calculator logo design.png" alt=""></div>
+            <div class="menu">
+                <i class="fa-solid fa-bars"></i>
+               </div>
+            <ul id="listmenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="https://bestpercentagecalculator.net/" target="_blank" >Percentage Calculator</a></li>
+                <li><a href="https://thesquarefootagecalculator.com/" target="_blank" >Square Footage Calculator</a> </li>
+                <li><a href="#">Contact us</a> </li>
+              
+            </ul>
+        </nav>
+    </header>
+    <!---------contact header--------->
+<div class="contact-hero"></div>
+
+<!-----------Contact-form--------->
+<div class="main-footer">
+<div class="footer-text">
+    <h1>CONTACT <span style="color: #f7a935; margin-top: -100px;">US</span></h1>
+  </div>
+      <div class="footer-form">
+        <form action="abc.html">
+              <label for="">Enter your name :</label><br>
+              <input type="text" placeholder="Name?" id="fname" required>
+          <span id="fName1"></span>
+            </br>
+            <label for="">Enter Your Number :</label><br>
+    <input type="phone" placeholder="Phone?" id="phone" required>
+    <span id="phone1"></span><br>
+    <label for="">Enter Your Email :</label><br>
+    <input type="email" placeholder="email" id="email" required>
+    <span id="email1"></span><br>
+    <button type="submit" onclick="btn();" style="text-transform: uppercase;">thank you for contact us</button>
+          </form>
+      </div>
+    </div>
+    </div>
+    </section>
+    <div id="middle">
+      <i class="fa-solid fa-check"></i>
+      <button id="close">Thank You</button>
+    </div>
+</div>
+     <!-----------top to bottom scrollbar------>
+<a href="#" class="to-top">
+    <i class="fa-solid fa-chevron-down"></i>
+</a>
+<!--------footer-------->
+<section id="footer1" style="padding-top: 100px;">
+    <div class="footer1">
+        <div class="footer-link1">
+            <ul>
+                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-last">
+        <div class="footer-last-link">
+            <ul>
+                <li><a href="#">Contacts |</a></li>
+  <li><a href="#">Terms of use |</a></li>
+  <li><a href="#"> Privacy |</a></li>
+  <li><span>© 2025 Online Age Calculator</span></li>
+  
+            </ul>
+        </div>
+    </div>
+  </section>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+//---------start mobile menu-------//
+var icon = document.querySelector('.menu')
+var bars = icon.querySelector('.fa-bars');
+var listmenu = document.querySelector('#listmenu');
+
+icon.onclick = function(){
+    if(listmenu.style.maxHeight =="200px"){
+listmenu.style.maxHeight ="0px";
+bars.classList.contains('fa-bars');
+bars.classList.replace('fa-times', 'fa-bars');
+    }
+    else{
+        listmenu.style.maxHeight="200px";
+        bars.classList.replace('fa-bars', 'fa-times');
+  
+    }
+}
+
+
+
+        const header = document.querySelector('header');
+        window.addEventListener('scroll', () =>{
+        if(window.pageYOffset > 200){
+        header.classList.add('header-bg')
+        }
+        else{
+          header.classList.remove('header-bg')
+        }
+        })
+//top to scrollbar 
+var toTop = document.querySelector('.to-top');
+
+window.addEventListener('scroll', () =>{
+    if(window.pageYOffset > 200){
+        toTop.classList.add('to-top-active');
+    }
+    else{
+        toTop.classList.remove('to-top-active');
+    }
+})
+
+//-------------contact-form----------//
+function btn(){
+    const fname = document.getElementById('fname');
+  const email = document.getElementById('email');
+  const phone = document.getElementById('phone');
+  const fName1 = document.getElementById('fName1');
+  const email1 = document.getElementById('email1');
+  const phone1 = document.getElementById('phone1');
+  const middle = document.getElementById('middle');
+  const close = document.getElementById('close');
+  if(fname.value === '' || email.value === '' || phone.value === ''){
+    middle.style.display = 'none';
+  }
+  else{
+    middle.style.display = 'block'
+  }
+  close.onclick = function(){
+    middle.style.display = 'none';
+  }
+  
+  
+  
+  event.preventDefault();
+  if(fname.value == ''){
+  fName1.innerHTML = 'Enter Your Name?';
+  fName1.style.color = 'red';
+  }
+  else{
+    fName1.innerHTML = 'Okey';
+    fName1.style.color = 'green';
+  }
+  if(email.value == ''){
+  email1.innerHTML = 'Enter Your  Email?';
+  email1.style.color = 'red';
+  }
+  else{
+    email1.innerHTML = 'Okey';
+    email1.style.color = 'green';
+  }
+  if(phone.value == ''){
+  phone1.innerHTML = 'Enter Your Phone Number?';
+  phone1.style.color = 'red';
+  }
+  else{
+    phone1.innerHTML = 'Okey';
+  phone1.style.color = 'green';
+  }
+  
+  
+  }
+  
+  
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+

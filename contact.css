@@ -1,0 +1,317 @@
+*{
+    padding: 0;
+margin: 0;
+border:none;
+outline: none;
+box-sizing: border-box;
+text-decoration: none;
+text-transform: capitalize;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+box-sizing: border-box;
+}
+/*------------body start--------*/
+body{
+    color: #000;
+    background: #efefef;   
+}
+/*------------start header--------*/
+header{
+    width: 100%;
+    box-shadow: 0 0 10px 10px rgba(0,0,0,0.1);
+    background: #fff;
+    box-shadow: 0 0 10px 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: 0.5s;
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0px auto;
+    padding: 10px;
+}
+.logo img{
+height: 50px;
+width: 50px;
+
+}
+nav ul li{
+    display: inline;
+    list-style:none;
+    position: relative;
+}
+nav ul li a{
+    color: rgb(143, 143, 143);;
+    font-size: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.2s;
+}
+nav ul li a:hover{
+    color: #4e4b4b;
+}
+
+/*----------this is mobile screen---------*/
+.menu{
+    border: 2px solid #f7a935;
+    border-radius: 5px;
+    padding: 7px 10px;
+z-index: 1000;
+cursor: pointer;
+display: none;
+}
+.menu i{
+    font-size: 17px;
+    color: rgb(143, 143, 143);
+}
+/*------------header end--------*/
+/*---------top to bottom scrollbar------------*/
+.to-top{
+    position: fixed;
+    height: 40px;
+    width: 40px;
+    background:#f7a935;
+    bottom:20px;
+    right:32px;
+    border-radius: 10px;
+    z-index: 1000;
+    font-size: 25px;
+    color:#fff;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    }
+    .to-top:hover{
+        color: rgb(143, 143, 143);
+    }
+    .to-top-active{
+        opacity: 1;
+    pointer-events: auto;
+    }
+/*---------contact-header-----------*/
+.contact-hero{
+    background:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(images/contact\ us\ banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 100%;
+top: 50px;
+}
+/*----------contact-form----------*/
+.main-footer{
+    margin-top: -100px;
+
+}
+.footer-text h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+  margin-top: -150px;
+    text-align: center;
+}
+.footer-form{
+width: 50%;
+background: #fff;
+box-shadow: 0 0 10px 10px rgba(0,0,0,0.1);
+padding: 40px 30px;
+margin: 50px auto;
+border-radius: 5px;
+}
+.footer{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.footertext h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.footer-form form label{
+font-size: 17px;
+font-weight: 600;
+color: #4e4b4b;
+padding-top: 1rem;
+}
+.footer-form form input{
+    border: none;
+    outline: none;
+    background: none;
+    border: 1px solid #626262;
+    color: #000;
+    font-size: 16px;
+    padding: 0.5rem;
+    width: 100%;
+    margin-top: 1rem;
+    position: relative;
+}
+.footer-form form button{
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+   border: 2px solid #f7a935;
+    color: #fff;
+    font-size: 1rem;
+    width: 100%;
+    display: block;
+    margin-top: 20px;
+    background: none;
+    color: #f7a935;
+    transition: 0.5s;
+}
+.footer-form form button:hover{
+    background: #f7a935;
+    color: #fff;
+}
+#middle{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background:#fff;
+    box-shadow: 0 0 1rem 1rem rgba(0,0,0,0.1);
+    border-radius: 0.5rem;
+   padding: 3rem 3rem;
+   text-align: center;
+   display: none;
+   width: 500px;
+ }
+ #middle i{
+    background: green;
+    font-size: 2rem;
+    padding: 1.5rem 1.5rem;
+    border-radius: 50%;
+    position: absolute;
+   top: 2%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   font-weight: 800;
+ }
+ #middle h3{
+     color: green;
+     font-size: 1.5rem;
+     padding-bottom: 1rem;
+     padding-top: 1rem;
+     font-weight: 700;
+ }
+ #middle button{
+     background: green;
+     color: #fff;
+     font-size: 1rem;
+     width: 100%;
+     padding: 0.5rem;
+     border-radius: 0.5rem;
+     font-weight: 700;
+ }
+ 
+ /*------------footer--------*/
+.footer1{
+    height: 70px;
+    width: 100%;
+    background: #fff;
+}
+.footer-link1{
+    text-align: center;
+    padding-top: 25px;
+}
+.footer-link1 ul li{
+    display: inline;
+    list-style:none;
+    background: #f7a935;
+   padding: 4px 10px;
+    border-radius: 5px;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+.footer-link1 ul li a{
+    font-size: 14px;
+    color: #fff;
+}
+/*------------footer-last-------*/
+.footer-last{
+    height: 50px;
+    width: 100%;
+    background: #000;
+}
+.footer-last-link{
+    padding-top: 15px;
+    text-align: center;
+}
+.footer-last-link ul li{
+    display: inline;
+    list-style:none;
+}
+.footer-last-link ul li a{
+    font-size: 14px;
+    color: #fff;
+   text-decoration: none;
+   font-size: 12px;
+}
+.footer-last-link ul li span{
+    color: #fff;
+    font-size: 12px;
+}
+/*------------this is for mobile screen-------*/
+@media only screen and (max-width: 771px){
+    .menu{
+        display: block;
+        font-size: 30px;
+        color: #000;
+    }
+    .logo img{
+        height: 40px;
+        width: 40px;
+    }
+    .main{
+        margin-top: 60px;
+    }
+    #listmenu{
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        top: 60px;
+        left: 0;
+        background: #fff;
+        box-shadow: 0 0 10px 10px rgba(87, 85, 85, 0.1);
+        overflow: hidden;
+        max-height: 0;
+        transition: 0.5s;
+    }
+#listmenu li{
+    display: block;
+}
+#listmenu li a{
+    color: #000;
+    line-height: 3em;
+    color: #626262;
+    font-size: 1rem;
+}
+#listmenu i{
+    display: none;
+}
+.footer-form{
+    width: 80%;
+}
+.footer-text h1{
+    font-size: 25px;
+}
+
+
+
+}
+
+
+
+
+
